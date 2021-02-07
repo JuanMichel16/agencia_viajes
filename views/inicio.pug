@@ -1,0 +1,35 @@
+extends ./layouts/layout
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra massa id elementum finibus. Aenean eget nisi risus. Duis bibendum nisi quis sem ultrices dignissim. Nullam interdum turpis euismod orci finibus, vestibulum porta velit varius. Aenean ac justo eget mi pulvinar tincidunt. Nullam purus erat, placerat ultricies lacus id, molestie dictum velit. Mauris molestie elit sit amet nibh mattis scelerisque.
+
+                p Nunc imperdiet felis quis neque aliquam, ac pulvinar felis malesuada. Duis hendrerit pellentesque velit, sed lacinia neque ornare at. Sed blandit massa arcu, ac tempor elit dictum at. Phasellus ornare sodales purus vel pulvinar. In eu hendrerit nisi, id tincidunt libero. Nulla a diam nunc. Aliquam rutrum tortor vel turpis pellentesque malesuada.
+
+            .col-md-6
+                img(src="./img/inicio_nosotros.jpg", alt="Imagen nosotros", class="img-fluid")
+
+            include ./layouts/bloque_viajes
+    
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo de 2022
+                        p.precio $2500 Dolares  
+
+    
+    .container
+        h2.mt-5.text-center Testimoniales
+
+        include ./layouts/bloque_testimoniales
